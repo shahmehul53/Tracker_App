@@ -31,7 +31,7 @@ const tryLocalSignin = dispatch => async () => {
 const clearErrorMessage = dispatch => () => {
     dispatch({ type: 'clear_error_message' });
 };
-
+//action function called with dispatch thats going to return a function
 const signup = dispatch =>  async({ email, password }) => {
         //make api request to sign up with email and password
         try {
